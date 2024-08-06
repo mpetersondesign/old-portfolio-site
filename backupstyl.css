@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: "Poppins";
+  font-size: 1.3em;
+  line-height: 2;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #a026a0;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  background: #040f1a;
+}
+
+section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-image: url(images/Screenshot_1.png);
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  z-index: 10;
+  transition: background, border 0.2s ease-in-out;
+}
+
+.nav--scrolled {
+  border-bottom: 2px solid #fff;
+}
+
+nav > img {
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -8px;
+  margin-left: auto;
+  font-size: 1.75em;
+  color: #fff;
+  font-family: "Poppins";
+  font-weight: 300;
+  text-transform: lowercase;
+}
+
+nav > ul > li {
+  padding: 0 16px;
+}
+
+nav > ul > li > a {
+  color: inherit;
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+  font-weight: 400;
+  padding: 0;
+  margin: 0.25em 0;
+  line-height: 1.2;
+  color: #a026a0;
+}
+
+h3 {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 32px;
+  padding: 0;
+  margin: 0 auto;
+  line-height: 1;
+  color: #a026a0;
+}
+
+section.about > ul > li > p {
+  margin: 0;
+}
+
+div.skills {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 5em;
+  margin: 1em 0;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+.rellax-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+.rellax object {
+  position: absolute;
+}
+
+.rellax-container object * {
+  fill: #fff !important;
+}
+
+.alien {
+  position: relative;
+}
+
+.alien * {
+  fill: #fff !important;
+}
+
+.hero {
+  max-width: 100%;
+  min-height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("./low-poly-grid-haikei.svg");
+  background-size: cover;
+  color: #fff;
+  z-index: 2;
+}
+
+.hero__container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.hero h1 {
+  line-height: 1.5;
+}
+
+.hero h1 > span {
+  background: #05080a;
+}
+
+.about {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: 760px) {
+  h1 {
+    font-size: 6em;
+  }
+  h2 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  section {
+    padding: 0;
+  }
+}
